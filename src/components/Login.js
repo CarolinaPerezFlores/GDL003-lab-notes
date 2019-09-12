@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import withFirebaseAuth from 'react-with-firebase-auth';
-import * as firebase from 'firebase/app'
+import * as firebase from 'firebase/app';
 import 'firebase/auth';
 import FirebaseConfig from '../Firebase';
 
@@ -12,8 +12,8 @@ class Login extends Component {
         return (
             <div>
                 {
-                    user ?
-                    <p> hello, {user.displayName}</p>
+                    user 
+                    ? <p> Hello, {user.displayName}</p>
                     : <p> Please, sign in</p>
                 }
                 {

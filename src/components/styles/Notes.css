@@ -1,0 +1,56 @@
+.Notes {
+    background: #FFFFFF;
+    box-shadow: 0 4px 8px 0 rgba(114, 13, 180, 0.1);
+    /* border-radius: 8px 8px 8px 8px; */
+    overflow: hidden;
+    height: 380px;
+  }
+  
+  .Notes__header {
+    padding: 0.5rem 0;
+    height: 80px;
+    background: rgb(123, 26, 202);
+    display: flex;
+    justify-content: center;
+  }
+  
+  .Notes__section-name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0;
+  }
+  
+  .Notes__section-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem 0;
+    background: #F4F4F7;
+  }
+  
+  
+  .Notes__avatar {
+    /* border-radius: 590%; */
+    margin-right: 100rem;
+    width: 50px;
+    height: 50px;
+  }
+  
+  .Notes__footer {
+    height: 54px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #98CA3F;
+    font-weight: bold;
+    font-style: italic;
+  }
+
+  .Form__Notes{
+    border: 1px solid rgb(8, 1, 1); 
+    border-spacing: 55px;
+  padding:10px 5px 15px 20px;
+
+  }

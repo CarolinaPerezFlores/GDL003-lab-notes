@@ -1,15 +1,15 @@
  import React from 'react';
  import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
-import Log from './pages/Log';
+import TakeNotes from './pages/TakeNotes';
 import Notes from './pages/Notes';
 function App(){
     return (
 
         <BrowserRouter>
          <Switch> 
-            <Route exact path="/Log" component={Log}/>
-            <Route exact path="/Log/Notes" component={Notes}/>
+            <Route exact path="/TakeNotes" component={TakeNotes}/>
+            <Route exact path="/TakeNotes/Notes" component={Notes}/>
             
 
         </Switch>

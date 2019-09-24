@@ -1,47 +1,36 @@
 import React from 'react';
 import Card from 'react-bootstrap/Card';
 import Form from 'react-bootstrap/Form';
-// import $ from 'jquery';
-// import Popper from 'popper.js';
 
 class NoteEdith extends React.Component {
-state = {};
+ constructor() {
+  super();
+  this.addNote= this.addNote.bind(this);
+}
 
-handleChange = e => {
-  // console.log({ 
-  //   name: e.target.name,
-  //   value: e.target.value
-  //  });
+addNote(){
+this.props.addNote(this.textInput.value, this.textInputDos.value)
+this.textInput.value = '';
+this.textInputDos.value= '';
+this.textInput.focus();
 
-  this.setState({
-    // titulo: e.target.value,
-   [e.target.name]: e.target.value,
-  })
-
-   
-  };
-
-   handleClick = e => {
-    console.log("Botton was clicked");
-    console.log(this.state)
-
-};
+}
 
   render(){
     return (
-        <center>
+        
       <Card style={{ width: '18rem' }}>
       <Card.Body>
         <Card.Title>
-        <Form.Control onChange={this.handleChange} type="text" placeholder="Title" name="titulo" value={this.state.titulo}/>
+        <Form.Control  ref={input => {this.textInput= input;}} type="text" placeholder="Title" name="titulo" />
         </Card.Title>
         <Card.Text>
-        <Form.Control onChange={this.handleChange} type="text" placeholder="Text" name="textoNota" value={this.state.textoNota}/>
+        <Form.Control  ref={inputDos => {this.textInputDos= inputDos;}} type="text" placeholder="Text" name="textoNota" />
         </Card.Text>
-        <Card.Link onClick={this.handleClick} href="#">Save</Card.Link>
+        <Card.Link onClick={this.addNote} href="#">Save</Card.Link>
       </Card.Body>
     </Card>
-    </center>
+    
     );
   }
 };

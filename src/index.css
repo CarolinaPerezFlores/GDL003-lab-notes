@@ -5,7 +5,7 @@ body {
 }
 
 .Notes {
-  background: #FFFFFF;
+  background: rgb(204, 20, 97);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.10);
   border-radius: 8px 8px 8px 8px;
   overflow: hidden;
@@ -14,8 +14,7 @@ body {
 
 .Notes__header {
   padding: 0.5rem 0;
-  height: 80px;
-  background: #1B1B25;
+  background: rgb(145, 44, 170);
   display: flex;
   justify-content: center;
 }
@@ -30,6 +29,7 @@ body {
 .Notes__section-info {
   display: flex;
   flex-direction: column;
+  height: 380px;
   justify-content: center;
   align-items: center;
   padding: 0.5rem 0;
@@ -52,4 +52,28 @@ body {
   color: #98CA3F;
   font-weight: bold;
   font-style: italic;
+}
+
+.Nav_login {
+  justify-content: end;
+}
+
+.Botton_one {
+  height:40px;
+  width:200px;
+  border-radius: 6px;
+  margin-left: 10px;
+}
+
+/* 
+.Space_Nav{
+  margin-left: 100Opx;
+  justify-content: end;
+} */
+
+.Botton_out {
+  height:40px;
+  width:100px;
+  border-radius: 6px;
+  margin-left: 10px;
 }

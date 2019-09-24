@@ -4,6 +4,11 @@ import ListItem from '@material-ui/core/ListItem';
 import ListItemText from '@material-ui/core/ListItemText';
 import ListSubheader from '@material-ui/core/ListSubheader';
 import Container from '@material-ui/core/Container';
+import '../components/styles/Notes.css'
+import color from '@material-ui/core/colors/indigo';
+// import { bgcolor } from '@material-ui/system';
+// import color from '@material-ui/core/colors/indigo';
+// import { createGenerateClassName } from '@material-ui/styles';
 // import DashboardIcon from '@material-ui/icons/Dashboard';
 // import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
 // import PeopleIcon from '@material-ui/icons/People';
@@ -17,43 +22,24 @@ class ListNew extends React.Component {
     return (
  
   <div>
-    <Container maxWidth="xs" style={{ width: '18rem', float:"left"}} >
+    <Container maxWidth="xs" style={{ width: '18rem', float:"left"}} className="ContainerTwo" >
     <ListItem button>
-      
-        
-     
-      <ListItemText primary="Dashboard" />
-    </ListItem>
-    <ListItem button>
-      
-      
-      <ListItemText primary="Orders" />
-    </ListItem>
-    <ListItem button>
-      
-      <ListItemText primary="Customers" />
-    </ListItem>
-    <ListItem button>
-     
-      <ListItemText primary="Reports" />
-    </ListItem>
-    <ListItem button>
-      
-      <ListItemText primary="Integrations" />
+
+      <ListItemText primary="All the notes" />
     </ListItem>
   
-    <ListSubheader inset>Saved reports</ListSubheader>
+    <ListSubheader inset>Labels</ListSubheader>
     <ListItem button>
       
-      <ListItemText primary="Current month" />
+      <ListItemText primary="Recipes" />
     </ListItem>
     <ListItem button>
       
-      <ListItemText primary="Last quarter" />
+      <ListItemText primary="Work" />
     </ListItem>
     <ListItem button>
       
-      <ListItemText primary="Year-end sale" />
+      <ListItemText primary="Reminders" />
     </ListItem>
     </Container>
   </div>

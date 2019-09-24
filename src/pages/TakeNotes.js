@@ -1,70 +1,27 @@
 import React from 'react';
 import Navbar from '../components/Navbar';
-import '../components/styles/Notes.css'
+import '../components/styles/Notes.css';
+import LogoNotepad from '../images/notepad.png'
 // import SignIn from '../components/NewForm'
-import Login from '../components/Login';
+
 // import NotesLogo from '../images/Lapiz.png'
 
-
 class TakeNotes extends React.Component {
-
-
-   
-    state = {
-      form: {
-        firstName: '',
-        lastName: '',
-        email: '',
-        jobTitle: '',
-        twitter: '',
-      },
-    };
-  
-    // handleChange = e => {
-    //   this.setState({
-    //     form: {
-    //       ...this.state.form,
-    //       [e.target.name]: e.target.value,
-    //     },
-    //   });
-    // };
-  
     
     render() {
-      return (
-
-        
-        <div >
+      return (      
+  <div >
           <div className="Notes__header">
-          <img 
-             className="Notes__avatar" 
-             src="https://cdn.pixabay.com/photo/2017/03/18/17/46/notepad-2154581_960_720.png"
-             alt="notita"
-             />
-          </div>
+         
+              <img src={LogoNotepad}></img>
+              <h1>    Take Note   </h1>
         
-        
+       </div>
           <div>
-           <Navbar /> 
-           
+           <Navbar/> 
           </div>
-          <div >
-
-             <div className="Notes__section-info">
-             
-             
-
-              <Login />
-              {/* <SignIn />               */}
-              
-              </div>
-
-        
-          </div>
-
-          </div>     
-              
-       
+   </div>     
+                  
       );
     }
   }

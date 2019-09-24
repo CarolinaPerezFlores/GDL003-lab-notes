@@ -1,8 +1,8 @@
- import React from 'react';
- import { BrowserRouter, Switch, Route } from 'react-router-dom';
-
+import React from 'react';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import TakeNotes from './pages/TakeNotes';
 import Notes from './pages/Notes';
+
 function App(){
     return (
 

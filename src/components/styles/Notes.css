@@ -1,7 +1,123 @@
+@import url('https://fonts.googleapis.com/css?family=Sniglet');
+
+.ContainerFirts{
+  height: 100%;
+  /* height: 465px; */
+  width: 100%;
+  /* width: 1085px; */
+  position: fixed;
+  background: #085f63;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, #204969, #49beb7);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #204969, #49beb7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  z-index: -10;
+  
+}
+
+  
+
+
+.sectMain{
+  justify-content: center;
+  align-items: center;
+  padding: auto;
+  margin-top: 2em;
+  margin-bottom: 1em;
+}
+
+.sectSecond{
+  margin-left: 3%;
+}
+
+
+.cardEdith{
+  width: '18rem'
+}
+ .CardMain{
+  font-family: Sniglet, cursive;
+   background-color: #08ffc8;
+   box-shadow: 0px 10px 14px -7px #8a8a8a;
+  
+ }
+
+.NavBarMain{
+   box-shadow: 0px 10px 14px -7px #8a8a8a;
+   background-color: rgb(255, 255, 255);
+}
+
+.LoginMain{
+ position: relative;
+  width: 325px;
+  height: 400px;
+  border-style: transparent;
+  border-width: 1px;
+  border-radius: 3px;
+  padding: 40px 30px;
+  
+  margin: auto;
+  margin-top: 5em;
+  margin-bottom: 5em;
+  /* margin: 5em 5em 5em 5em; */
+  justify-content: center;
+  justify-items: center;
+  background-color: transparent;
+  box-shadow: -5px -2px 46px 4px #276873;
+  /* background: #085f63;  fallback for old browsers */
+  /* background: -webkit-linear-gradient(to bottom, #204969, #49beb7);  Chrome 10-25, Safari 5.1-6 */
+  /* background: linear-gradient(to bottom, #204969, #49beb7); W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+}
+
+.LoginMain:hover {
+  background:linear-gradient(to bottom, #408c99 5%, #599bb3 100%);
+  background-color:#408c99;
+}
+
+.LoginMain:active {
+  position:relative;
+  top:1px;
+}
+
+.ImageMain{
+  max-width: 80px;
+  /* justify-content: flex-end;
+  justify-items: center;
+  display:flex; */
+  text-shadow: 2px 2px 2px black;
+  justify-content:center;
+  /* margin-top: 20px; */
+  display:flex;
+  margin: auto;
+}
+
+.ImageSecond{
+    max-width: 50px;
+}
+
+.DivHeader{
+  width: 600px;
+  height: 50px;
+  margin: auto;
+  display: inherit;
+  justify-content: center;
+  align-items: center;
+   /* display: inline; */
+}
+
+.CardMini{
+  box-shadow: 0px 10px 14px -7px #8a8a8a;
+  font-family: Sniglet, cursive;
+  /* border-radius: 5px; */
+
+}
+
+.loginBar{
+  justify-content: flex-end;
+}
+
 .Notes {
     background: #FFFFFF;
     box-shadow: 0 4px 8px 0 rgba(114, 13, 180, 0.1);
-    /* border-radius: 8px 8px 8px 8px; */
+    /* border-radius: 80px; */
     overflow: hidden;
     height: 380px;
   }
@@ -9,9 +125,20 @@
   .Notes__header {
     padding: 0.5rem 0;
     height: 80px;
-    background: rgb(123, 26, 202);
+    /* background: rgb(116, 57, 165); */
+    background: #085f63;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #204969, #49beb7);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #204969, #49beb7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+box-shadow: 0px 10px 14px -7px #8a8a8a;
+
     display: flex;
     justify-content: center;
+
+    
+    /* background: #085f63; */
+    /* #49beb7 */
+    
   }
   
   .Notes__section-name {
@@ -56,6 +183,8 @@
   }
 
 
+
+
   .Container{
  display: grid;
  grid-template-columns: 33% 33% 33%;
@@ -63,4 +192,63 @@
 
   .ContainerTwo{
     background:"dark"
+  }
+
+
+  @import url('https://fonts.googleapis.com/css?family=Gruppo');
+  
+  .Title{
+   
+    /* font-family: "Delius Unicase", cursive; */
+    
+   
+    font-family: Gruppo, cursive;
+    color: #FFFFFF;
+    text-shadow: 2px 2px 2px rgb(105, 105, 105);
+    justify-content:center;
+    margin-top: auto;
+    display:flex;
+  }
+
+  .TitleDos{
+    font-family: Gruppo, cursive;
+    color: #FFFFFF;
+    text-shadow: 2px 2px 2px rgb(10, 10, 10);
+    /* justify-content:center;
+    margin-top: auto; */
+    display: inline-flex;
+    font-size: 34px;
+    /* margin: auto ; */
+    margin-bottom: 0px;
+  }
+
+
+  .DivContainerLogin{
+    width: 300px;
+    padding-left: 1em;
+    background-color: transparent;
+    margin: 0px 0px 0px 51em;
+    
+  }
+
+  
+  .DivContainerLoginMain{
+    margin-left: 1em;
+    margin-top: 3em;
+    
+  }
+
+  .ContainerInitial{
+   flex-wrap: wrap;
+    width: 1500px;
+    margin: auto;
+    margin-top: 5em;
+    align-content: center;
+    align-items: center;
+  }
+
+  .FontGeneral{
+    font-family: Sniglet, cursive;
+    font-size: 17px;
+   
   }

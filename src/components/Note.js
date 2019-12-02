@@ -18,7 +18,7 @@ class Note extends React.Component {
   render(){
        
     return (
-      <Card style={{ width: '18rem', float:"right"}}>
+      <Card style={{ width: '18rem', float:"left", margin:"1em"}} className="CardMini">
       <Card.Body>
         <Card.Title key={this.noteId}>
         {this.noteTitle} 

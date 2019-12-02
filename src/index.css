@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Sniglet');
 body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
+  background-color:#ebefd0;
 }
 
 .Notes {
@@ -12,12 +14,7 @@ body {
   height: 380px;
 }
 
-.Notes__header {
-  padding: 0.5rem 0;
-  background: rgb(145, 44, 170);
-  display: flex;
-  justify-content: center;
-}
+
 
 .Notes__section-name {
   display: flex;
@@ -26,15 +23,15 @@ body {
   padding: 1rem 0;
 }
 
-.Notes__section-info {
+/* .Notes__section-info {
   display: flex;
   flex-direction: column;
   height: 380px;
   justify-content: center;
   align-items: center;
   padding: 0.5rem 0;
-  background: #F4F4F7;
-}
+  background: rgb(122, 122, 134);
+} */
 
 
 .Notes__avatar {
@@ -60,9 +57,15 @@ body {
 
 .Botton_one {
   height:40px;
-  width:200px;
+  width:fixed;
   border-radius: 6px;
-  margin-left: 10px;
+  /* margin-left: 0px; */
+  margin-top: 1em;
+  margin-left: 1em;
+  font-family: Sniglet, cursive;
+  font-size: 14px;
+  /* margin: 30px 30px 50px 50px, */
+  
 }
 
 /* 
@@ -72,8 +75,12 @@ body {
 } */
 
 .Botton_out {
+  margin-top: 1em;
   height:40px;
-  width:100px;
+  width:auto;
   border-radius: 6px;
   margin-left: 10px;
+  font-family: Sniglet, cursive;
+  font-size: 14px;
 }
+

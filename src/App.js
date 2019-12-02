@@ -6,12 +6,11 @@ import Notes from './pages/Notes';
 function App(){
     return (
 
+        
         <BrowserRouter>
          <Switch> 
-            <Route exact path="/TakeNotes" component={TakeNotes}/>
-            <Route exact path="/TakeNotes/Notes" component={Notes}/>
-            
-
+            <Route exact path="/" component={TakeNotes}/>
+            <Route exact path="/Notes" component={Notes}/>
         </Switch>
         </BrowserRouter>
         

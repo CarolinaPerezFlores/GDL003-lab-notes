@@ -31,7 +31,7 @@ class Login extends Component {
     render(){
         const { user, signOut, signInWithGoogle } = this.props;
         return (
-            <div className="DivContainerLogin">
+            <div className="ContainerInitial">
                 {
                     user 
                     ? <a className="FontGeneral"> Hello, {user.displayName} </a>
@@ -39,7 +39,7 @@ class Login extends Component {
                 }
                 {
                       user
-                      ?  <button   className="Botton_out" onClick={this.handleClickOut}> <img src={BottonLogout}></img>  Sign out</button>
+                      ?  <button   className="Botton_out" onClick={this.handleClickOut}> <img src={BottonLogout}></img></button>
                       :  <button className="Botton_one"  onClick={this.handleClick}><img src={BottonG}></img> sign in whith google</button>
 
                 }

@@ -7,8 +7,9 @@ import ListNew from '../components/ListNew'
 import Container from '@material-ui/core/Container';
 import Navbar from '../components/Navbar';
 import '../components/styles/Notes.css'
-import LogoNotepad from '../images/notepad.png'
+import LogoNotepad from '../images/sticky-note.png'
 import GridExamplesPage from '../components/Grid'
+import Login from '../components/Login';
 
 class Notes extends React.Component {
   constructor(){
@@ -69,24 +70,25 @@ class Notes extends React.Component {
     return (
     <div>
          <div className="Notes__header">
-         <img src={LogoNotepad}></img>
-              <h1>    Take Note   </h1>
+           <div className="DivHeader">
+              <img className="ImageSecond" src={LogoNotepad}></img>
+              <p className="TitleDos">    Take Note   </p>
+          </div>
+         
           </div>
         
           <div>
-           <Navbar /> 
+           <Login /> 
           </div>
          
-      <div>
-        <ListNew />
-      </div>
-      {/* <Container maxWidth="sm" style={{ width: '18rem', float:"center"}} >  */}
+   
      
- <section className={Container}>
-      <div>
+
+      <div className="sectMain">
         <NoteEdith  addNote={this.addNote}/>
       </div>
-      
+
+      <div className="sectSecond">
         {this.state.notes.map(note => {
             return(
               <div>
@@ -106,7 +108,7 @@ class Notes extends React.Component {
       {/* </Container>  */}
       {/* <GridExamplesPage /> */}
             
-      </section>
+      </div>
      </div>
     );
   }

@@ -1,4 +1,5 @@
 {
+  "homepage": "https://CarolinaPerezFlores.github.io/GDL003-lab-notes",
   "name": "labnotes",
   "version": "0.1.0",
   "private": true,
@@ -16,8 +17,12 @@
     "react-scripts": "0.9.5",
     "react-with-firebase-auth": "^1.0.4"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "gh-pages": "^3.1.0"
+  },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",

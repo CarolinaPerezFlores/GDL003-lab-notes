@@ -9,8 +9,8 @@ function App(){
         
         <BrowserRouter>
          <Switch> 
-            <Route exact path="/" component={TakeNotes}/>
-            <Route exact path="/Notes" component={Notes}/>
+            <Route exact path="https://carolinaperezflores.github.io/GDL003-lab-notes/public/" component={TakeNotes}/>
+            <Route exact path="https://carolinaperezflores.github.io/GDL003-lab-notes/public/Notes" component={Notes}/>
         </Switch>
         </BrowserRouter>
         
